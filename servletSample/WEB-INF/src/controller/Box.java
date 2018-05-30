@@ -15,12 +15,12 @@ import dto.Item;
 import util.Constants;
 import util.SessionBoxItems;
 
-@WebServlet(urlPatterns = { "/box" })
-public class Box extends AuthorizeController {
+@WebServlet(urlPatterns = { "/user/box" })
+public class Box extends SuperController {
 
 	// Item画面表示
 	@Override
-	protected void doGetCommand(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+	protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
 
 		List<Item> items = this.getBoxItems(req);
 

@@ -12,7 +12,7 @@ import dto.User;
 import util.Constants;
 import util.SessionLoginUser;
 
-@WebServlet(urlPatterns = { "/login" })
+@WebServlet(urlPatterns = { "/auth/login" })
 public class Login extends SuperController {
 
 	// ログイン画面表示

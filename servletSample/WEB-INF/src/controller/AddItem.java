@@ -11,12 +11,12 @@ import javax.servlet.http.HttpServletResponse;
 import util.Constants;
 import util.SessionBoxItems;
 
-@WebServlet(urlPatterns = { "/add-item" })
-public class AddItem extends AuthorizeController {
+@WebServlet(urlPatterns = { "/user/add-item" })
+public class AddItem extends SuperController {
 
 	// BoxにItemを追加する処理
 	@Override
-	protected void doPostCommand(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+	protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
 
 		String itemId = req.getParameter("item-id");
 

@@ -12,10 +12,10 @@ public final class Constants {
 	}
 
 	public static class Url {
-		public static final String LOGIN = "./login";
-		public static final String LOGOUT = "./logout";
-		public static final String ITEMS = "./items";
-		public static final String BOX = "./box";
+		public static final String LOGIN = "../auth/login";
+		public static final String LOGOUT = "../auth/logout";
+		public static final String ITEMS = "../user/items";
+		public static final String BOX = "../user/box";
 	}
 
 	public static class Jsp {

@@ -12,12 +12,12 @@ import dao.ItemsDAO;
 import dto.Item;
 import util.Constants;
 
-@WebServlet(urlPatterns = { "/items" })
-public class Items extends AuthorizeController {
+@WebServlet(urlPatterns = { "/user/items" })
+public class Items extends SuperController {
 
 	// 商品一覧画面表示
 	@Override
-	protected void doGetCommand(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+	protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
 
 		ItemsDAO itemsDao = new ItemsDAO();
 		List<Item> items = itemsDao.findAll();

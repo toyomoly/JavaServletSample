@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 import util.Constants;
 import util.SessionLoginUser;
 
-@WebServlet(urlPatterns = { "/logout" })
+@WebServlet(urlPatterns = { "/auth/logout" })
 public class Logout extends SuperController {
 
 	// ログアウト画面表示

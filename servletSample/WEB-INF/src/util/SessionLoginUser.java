@@ -1,5 +1,6 @@
 package util;
 
+import javax.servlet.ServletRequest;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
@@ -11,6 +12,10 @@ public class SessionLoginUser {
 
 	public SessionLoginUser(HttpServletRequest req) {
 		this.session = req.getSession();
+	}
+
+	public SessionLoginUser(ServletRequest req) {
+		this.session = ((HttpServletRequest) req).getSession();
 	}
 
 	public User get() {
