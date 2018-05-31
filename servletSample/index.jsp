@@ -1,1 +1,1 @@
-<% response.sendRedirect("./auth/login"); %>>
+<% response.sendRedirect("./auth/login"); %>
